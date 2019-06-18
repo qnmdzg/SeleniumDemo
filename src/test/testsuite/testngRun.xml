@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="selenium">
+        <classes>
+            <class name="com.newegg.testngday2.ActionTest">
+                <methods>
+                    <include name="clickDemo1"/>
+                </methods>
+            </class> <!-- com.newegg.testngday2.ActionTest -->
+        </classes>
+    </test> <!-- selenium -->
+</suite> <!-- Default Suite -->
