@@ -21,7 +21,8 @@ public class ActionTest{
         driver = new ChromeDriver();
     }
     @AfterMethod
-    public  void  closeBrower(){
+    public  void  closeBrower() throws InterruptedException {
+        Thread.sleep(3000);
         driver.quit();
     }
 
@@ -45,7 +46,7 @@ public class ActionTest{
         WebElement element1 = driver.findElement(By.xpath("//*[@id=\"su\"]"));
         element1.click();
         String title = driver.getTitle();
-        Assert.assertEquals("selenium_百度搜索",title);
+        Assert.assertEquals("selenium_百度搜索1",title);
     }
 
     @Test
